@@ -1,2 +1,5 @@
-# ocsd
-OWASP Certified Secure Developer
+# OCSD
+OWASP Certified Secure Developer - the repository for the the proposed OCSD certification
+
+ 
+OWASP Project link: [https://owasp.org/www-project-certified-secure-developer/](https://owasp.org/www-project-certified-secure-developer/)
