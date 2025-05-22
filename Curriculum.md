@@ -1,0 +1,109 @@
+Modules:
+1. Secure Architecture and Threat Modelling
+2. Authentication and Credential Management 
+3. Authorisation 
+4. Input Validation and Output Encoding 
+5. Cryptography and Key Management
+6. Error Handling
+7. Secure Logging
+8. Data Protection and Privacy
+9. Secure Communications
+10. Malicious Code and Software Supply Chain Security including usage of open source software
+11. Business Logic Security
+12. Secure File and Resource Handling
+13. API and Web Service Security
+14. Secure Configuration and Deployment
+
+
+
+Detailed Module Outline
+Module 1: Secure Architecture and Threat Modeling
+  ASVS latest version
+  STRIDE, DREAD, LINDDUN
+  Data Flow Diagrams (DFDs)
+  Trust boundaries
+  Secure SDLC practices
+  Common design flaws
+
+Module 2: Authentication and Credential Management
+  ASVS latest version
+  MFA implementation
+  Secure password storage (hashing/salting)
+  Authenticator lifecycle (provisioning, rotation, expiration)
+  OAuth2, OIDC, SAML basics
+  Credential recovery securely
+
+Module 3: Authorisation
+  ASVS latest version
+  Session timeout, renewal
+  Cookie attributes: Secure, HttpOnly, SameSite
+  Token vs cookie-based sessions
+  Logout and re-authentication
+  Fixation and hijacking defenses
+  RBAC vs ABAC
+  Object-level authorization
+  Horizontal vs vertical privilege escalation
+  Testing access control effectively
+
+Module 5: Input Validation and Output Encoding
+  Positive (whitelist) validation
+  Output encoding: HTML, JS, SQL
+  Server-side vs client-side validation
+  Injection attacks (SQL, XSS, OS, XXE, XPath)
+
+Module 6: Cryptography and Key Management
+  Common algorithm pitfalls
+  Secure random number generation
+  Key lifecycle and storage
+  Digital signatures and HMACs
+
+Module 7: Error Handling
+  Logging sensitive operations securely
+  Avoiding stack traces/info leaks
+
+Module 8: Secure Logging
+  Log protection (tamper resistance)
+  Real-time alerting and monitoring
+
+Module 8: Data Protection and Privacy
+  TLS enforcement
+  Client-side storage threats
+  GDPR/CCPA considerations
+  Data retention and purging
+  Caching and privacy headers
+
+Module 9: Secure Communications
+  TLS 1.2+ best practices
+  HTTPS and HSTS
+  Certificate pinning
+  Secure protocol selection
+
+Module 10: Malicious Code and Supply Chain and open source software
+  Dependency management (SCA tools like OWASP Dependency-Check, Snyk)
+  Secure deserialization
+  Subdomain takeover
+  Code signing and verification
+  open source software and licensing
+
+Module 11: Business Logic Security
+  Logical flaws (race conditions, inconsistent state)
+  Anti-automation (CAPTCHA, rate limiting)
+  Anomaly detection and misuse cases
+
+Module 12: Secure File and Resource Handling
+  Upload/download controls
+  Path traversal
+  RFI, SSRF protections
+  MIME sniffing and validation
+
+Module 13: API and Web Service Security
+  REST, GraphQL, and SOAP security models
+  Authentication and authorization for APIs
+  Throttling and abuse protection
+  JSON and XML parser safety
+
+Module 14: Secure Configuration and Deployment
+  Secure defaults
+  Secrets management (vaults, env vars)
+  CORS, CSP, HSTS
+  SBOM and CI/CD hardening
