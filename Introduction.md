@@ -1,0 +1,34 @@
+OCSD curriculum - OWASP Certified Secure-Software Developer
+
+
+The scope of this certification is Web Application Security.
+It is Foundation level exam.
+
+The questions we may want to ask ourselves are:
+If I am hiring a web application developer, what are the security related skills I would look for?
+If I were a web application developer what security skills would I like to be validated for?
+
+Generally the topics that we centre our questions around are:
+Authentication and authorisation
+Session Management
+Cryptography (certs, cert pinning, sharing keys, cipher suites)
+DNS entries
+Service discovery
+Firewall rules
+Input data validation
+Output data encoding
+Knowledge about application related security vulnerabilities
+Database concepts
+Error handling
+Secrets handling (where should secrets be stored - code / configuration file / ???) sort of a negative question :-) 
+What is SQL Injection
+What is the difference between reflected XSS and persistent XSS
+What is the best way to address XSS
+HTTP Security headers
+Hardening of other http headers
+Privacy - what is PII and its protection
+ASVS
+Cornucopia
+Cheat sheets
+
+We have a markdown file to develop curriculum for this certification exam, based on the security related questions we ask as a hiring manager and what we would want to know about security as a developer.
