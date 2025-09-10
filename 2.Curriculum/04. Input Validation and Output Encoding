@@ -1,1 +1,101 @@
+## Module 4: Input Validation and Output Encoding  
+
+##### Input Validation Principles
+
+* Always use Positive (Whitelist) Validation
+
+&nbsp;	- Explicitly define what is allowed and reject everything else.
+
+&nbsp;	- Do not attempt to filter out "bad" data (negative validation), as attackers will find ways to bypass your filters.
+
+* Never trust client-side validation for security.
+
+&nbsp;	- Use client-side validation for a better user experience (UX) but understand it can be easily bypassed.
+
+&nbsp;	- All security-critical validation must happen on the server.
+
+* Validate all input sources, not just form fields.
+
+&nbsp;	- This includes URL parameters, HTTP headers, cookies, file uploads, and data from APIs.
+
+* Enforce strict data constraints.
+
+&nbsp;	- Check for the expected data type (e.g., integer, string, date).
+
+&nbsp;	- Enforce a maximum and minimum length for strings.
+
+&nbsp;	- Validate the format of the data (e.g., a regex for an email address).
+
+* Reject invalid input early.
+
+&nbsp;	- If input fails validation, reject it immediately and provide a generic error message. Do not process it further.
+
+* Use a trusted validation library.
+
+&nbsp;	- Avoid writing your own validation logic from scratch. Use a well-tested library from your chosen framework.
+
+
+
+##### Output Encoding and Sanitization
+
+* Encode all user-supplied data before rendering it.
+
+&nbsp;	- This prevents the browser from interpreting the data as code.
+
+* Use context-specific encoding.
+
+&nbsp;	- For HTML: Convert special characters like <, >, \&, ", and ' to their HTML entity equivalents (\&lt;, \&gt;, \&amp;, etc.). This prevents XSS attacks.
+
+&nbsp;	- For JavaScript: Escape all user input if it's being placed inside a script block.
+
+&nbsp;	- For SQL: The most secure method is to use parameterized queries. If this is not an option, use the database driver's specific escape function, but this is a last resort.
+
+* Sanitize data for rich content
+
+&nbsp;	- If you allow users to input rich HTML, use a dedicated HTML sanitizer library to remove dangerous tags and attributes.
+
+* Do not rely on a single encoding function for all contexts.
+
+&nbsp;	- A function for HTML encoding is not safe for JavaScript, and vice-versa.
+
+* Use a secure encoding library.
+
+&nbsp;	- Modern frameworks provide built-in functions for safe encoding.
+
+
+
+##### Preventing Injection Attacks
+
+* SQL Injection:
+
+&nbsp;	- Always use parameterized queries or prepared statements.
+
+&nbsp;	- Never build a SQL query by concatenating strings with user input.
+
+* OS Command Injection:
+
+&nbsp;	- Do not pass user-supplied data to system commands.
+
+&nbsp;	- If a command must be run, use a dedicated, safe API and a whitelist of allowed commands and parameters.
+
+* XXE (XML External Entity) Injection:
+
+&nbsp;	- Disable DTDs and external entities in your XML parsers by default.
+
+* LDAP Injection:
+
+&nbsp;	- Sanitize or escape all user input before it is used in an LDAP search filter.
+
+&nbsp;	- Use an API that supports parameterized queries for LDAP if available.
+
+* SSI (Server-Side Includes) Injection:
+
+&nbsp;	- Disable Server-Side Includes if you don't need them.
+
+&nbsp;	- If they are necessary, ensure no user input can influence the directives.
+
+* XPath Injection:
+
+&nbsp;	- Use a dedicated XPath API that handles parameters securely instead of building XPath queries with string concatenation.
+
 
