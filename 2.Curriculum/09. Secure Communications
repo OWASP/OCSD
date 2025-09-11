@@ -1,1 +1,17 @@
+Encrypt Communications Everywhere
+•	Use TLS/SSL (HTTPS) for all web traffic to encrypt all communication between clients (browsers, APIs, mobile apps) and servers and prevent eavesdropping and man-in-the-middle (MITM) attacks.
+•	Enforce HSTS (HTTP Strict Transport Security) headers to ensure the browser always uses HTTPS. Even if a user types or requests HTTP, the browser will automatically upgrade the connection to HTTPS, preventing protocol downgrade and man-in-the-middle attacks
+•	Disable weak ciphers (SSLv2, SSLv3, TLS 1.0, TLS 1.1) and enforce modern protocols (TLS 1.2/1.3).
 
+Secure Internal Communications
+•	Encrypt service-to-service traffic using mTLS (mutual TLS) to ensure that communication between internal applications (APIs, containers..)  is fully encrypted end-to-end, with both the client and server mutually authenticating each other
+•	Use VPNs or Zero Trust Network Access (ZTNA) to secure internal DevOps tools such as Jenkins, GitHub/GitLab, and Bitbucket.
+ A VPN creates an encrypted tunnel between the user and internal tools, securing traffic at the network level, while ZTNA takes a modern approach by granting access per user, per device, and per session after authentication and policy checks, ensuring no implicit trust even when inside the network and providing protection at the application level.
+
+Secrets & Credentials Management
+•	Never hardcode passwords, API keys, or tokens in code.
+•	Store them securely in a vault (HashiCorp Vault, AWS Secrets Manager, Azure Key Vault).
+•	Rotate keys regularly and enforce least privilege access
+
+Secure DevOps Toolchain
+•	Enable SSL/TLS for Git repositories (GitHub, GitLab, Bitbucket) to ensure that all connections between developers or CI/CD pipelines and the repositories are fully encrypted using HTTPS/TLS, protecting code, credentials, and other sensitive data in transit from interception or tampering
