@@ -1,1 +1,8 @@
+Malicious Code and Software Supply Chain Security including usage of open source software
 
+
+        Dependency management (SCA tools like OWASP Dependency-Check)
+        Secure deserialization
+        Subdomain takeover
+        Code signing and verification
+        Open source software and licensing
