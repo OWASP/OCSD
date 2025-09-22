@@ -4,8 +4,6 @@ Understanding of threat modelling
       - purpose of threat modelling
             - use cases for which threat modelling is used 
                 identifying threats for a solution so mitigations can be documented
-                risk assessments
-                cost benefit analysis
                 etc
       - output of threat modelling
             - list of mitigations
