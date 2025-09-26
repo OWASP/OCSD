@@ -1,0 +1,33 @@
+Secure Logging
+
+Assets / resources for which logging needs to be enabled or created - 
+        APIs 
+        web application
+        server side code
+        kubernetes
+        PRs
+        activities on image registry 
+Using logging libraries like log4j
+attributes of events and logs - time stamp, identity, action performed
+what not to log
+        passwords
+        data elements that have regulatory or legal or statutory requirements like personally identifiable information or card holder data
+log aggregation, log monitoring
+
+
+References:
+1. https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/
+2. https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+3. https://top10proactive.owasp.org/archive/2018/c9-security-logging/
+4. https://owasp.org/www-project-top-ten/2017/A10_2017-Insufficient_Logging%2526Monitoring
+5. https://www.youtube.com/watch?v=t_VWIGfkakc
+6. https://devguide.owasp.org/en/04-design/02-web-app-checklist/09-logging-monitoring/
+7. https://top10proactive.owasp.org/the-top-10/c9-security-logging-and-monitoring/
+8. https://owasp.org/API-Security/editions/2019/en/0xaa-insufficient-logging-monitoring/
+9. https://owasp.org/www-project-top-10-low-code-no-code-security-risks/content/2022/en/LCNC-SEC-10-Security-Logging-and-Monitoring-Failures
+10. https://niccs.cisa.gov/training/catalog/cybrary/owasp-top-10-a092021-security-logging-and-monitoring-failures
+11. https://dev.to/leading-edje/owasp-top-10-for-developers-insufficient-logging-and-monitoring-41oa
+12. https://cheatsheetseries.owasp.org/cheatsheets/Logging_Vocabulary_Cheat_Sheet.html
+13. https://owasp.org/www-project-kubernetes-top-ten/2022/en/src/K05-inadequate-logging
+
+Sample questions
