@@ -1,26 +1,12 @@
-Secure Architecture and Threat Modelling
+Security Architecture and Threat Modelling
 
-Understanding of threat modelling 
-      - purpose of threat modelling
-            - use cases for which threat modelling is used 
-                identifying threats for a solution so mitigations can be documented
-                etc
-      - output of threat modelling
-            - list of mitigations
-            - risks
-            - etc
-      - various threat models methods 
-            - STRIDE
-            - DREAD
-            - PASTA
-            - LINDDUN
-            - TRIKE
-            - etc.
-      - using Data Flow Diagrams (DFDs) in threat modelling
-            - How DFDs support threat models
-            - what do information flows represent
-      - Trust boundaries and their importance in threat modelling
-      - Common design flaws
+What is threat modelling?
+Why should developers be aware of threat modelling?
+What are the outputs of threat modelling?
+Commonly used threat model methods
+Using data flow boundaries
+Using trust boundaries
+Common design flaws
 
 References:
 1. https://owasp.org/www-community/Threat_Modeling
