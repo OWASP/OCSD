@@ -1,1 +1,72 @@
+# Authorisation 
 
+## Concepts and Best Practices 
+
+### Session timeout, renewal
+
+### Cookie attributes: Secure, HttpOnly, SameSite
+
+
+### Token vs. cookie-based sessions
+
+
+### Logout and re-authentication
+
+
+### Fixation and hijacking defenses
+
+### RBAC vs. ABAC
+
+Roll-based access control (RBAC) and attribute-based access control (ABAC) are two different styles of access control policies.  
+
+With RBAC, users of a system are assigned roles, and each role has a defined set of permissions. Access decisions are based on what role the user holds.  For example, in an electronic medical record (EMR) platform, a user with the `Nurse` role can view patient charts, and a `Doctor` role can view and update patient charts.
+
+With ABAC, decisions are based on attributes, which can come from the user, resource, action, or environment.  For example, an ABAC policy might allow only employees in the Medical Department with clearance >= 3 to update patient charts while inside the hospital network. Attributes may fall under any of the following categories. 
+* User attributes, such as job title, clearance level or department
+* Resource attributes like document classification or owner
+* Environment attributes, such as time of day, location or device trust level
+* Action attributes like including read, write or approve
+
+
+### Object-level authorisation
+
+Object-Level Authorisation (OLA) is a fine-grained access control mechanism that ensures a user can only access or modify specific objects (records, files, or resources) they are permitted to.
+
+It goes beyond checking whether a user is authenticated or has a general role, such as `Admin` or `User`.
+Instead, it checks whether the user owns or has permission for the specific resource they’re trying to access.
+
+Consider the following example.
+
+1. A user with ID 123 requests `/api/orders/456`.
+
+2. The application must check if order 456 belongs to user 123.
+
+3. Even if the user is authenticated, they should not see or modify someone else’s order.
+
+If this check is missing, it’s known as an Insecure Direct Object Reference (IDOR) — a common OWASP Top 10 vulnerability.
+
+A developer can follow the following steps to enforce OLA.
+
+1. **Authenticate the user:** Identify who is making the request (via session, token, etc.)
+2. Extract the object identifier, such as the order ID, document ID, or record ID.
+3. **Check object ownership or permissions:** Confirm the user has rights to that specific object.
+4. **Enforce least privilege:** Users can only access what they truly need.
+
+### Security of authorisation tokens (JWT etc)
+
+
+### Horizontal vs vertical privilege escalation
+
+
+### Effective testing of access control 
+
+
+## References
+
+1. [OWASP Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
+
+2. [NIST Computer Security Resource Center glossary](https://csrc.nist.gov/glossary/term/authorization)
+
+3. [CWE-285: Improper Authorization - MITRE Common Weakness Enumeration](https://cwe.mitre.org/data/definitions/285.html)
+
+4. [C1: Implement Access Control - OWASP Top 10 Proactive Controls](https://top10proactive.owasp.org/the-top-10/c1-accesscontrol/#6-do-not-hard-code-roles)
