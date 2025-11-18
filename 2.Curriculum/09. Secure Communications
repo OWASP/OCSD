@@ -15,3 +15,12 @@ Secrets & Credentials Management
 
 Secure DevOps Toolchain
 •	Enable SSL/TLS for Git repositories (GitHub, GitLab, Bitbucket) to ensure that all connections between developers or CI/CD pipelines and the repositories are fully encrypted using HTTPS/TLS, protecting code, credentials, and other sensitive data in transit from interception or tampering
+
+- Certificate pinning to avoid adversary-in-the-middle attack
+
+- HSTS
+
+- cookie flags
+
+
+- adverasary in the middle attack and insecure wi-fi
