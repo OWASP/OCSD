@@ -2,6 +2,18 @@
 
 ##### Input Validation Principles
 
+- What is input validation and when should it be applied
+
+- addressing input validation 
+    for databases
+    for operating system
+    for LDAP
+    etc
+
+- client side validation versus server side validation
+
+- use trusted validaiton library
+
 * Always use Positive (Whitelist) Validation
 
 &nbsp;	- Explicitly define what is allowed and reject everything else.
