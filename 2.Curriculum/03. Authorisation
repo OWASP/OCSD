@@ -12,4 +12,6 @@
 
 - mistakes made in authorisation
 
-- 
+- privilege escalation - horizontal and vertical
+
+- object and funtion level access control (OLAC and FLAC)
