@@ -16,20 +16,9 @@
 
 2.3 Credential Lifecycle Management
 - Credential Provisioning:**  
-When a new user is created, enforce a strong password policy with complexity requirements. Use a trusted password generator for initial password creation where possible.
-
 - Credential Rotation:**  
-Frequent password expiration is no longer considered best practice, as it can lead to users choosing simpler passwords.
-Focus on detecting compromised credentials and requiring a password change only when a compromise is suspected.
-
 - Credential Revocation:**  
-Have a clear, automated process to immediately revoke credentials when an employee leaves or an account is compromised.
-
 - Secure Credential Recovery:**  
-Avoid sending plaintext passwords. Instead, send a secure, one-time link to a user's verified email to allow them to reset their password.
-Expire password reset links quickly (e.g., after 15 minutes).
-Rate-limit password recovery attempts to prevent automated attacks.
-
 
 # Secure Password Storage
 
