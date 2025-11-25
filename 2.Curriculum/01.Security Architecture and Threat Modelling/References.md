@@ -1,1 +1,20 @@
 
+References:
+1. https://owasp.org/www-community/Threat_Modeling
+2. https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html
+3. https://owasp.org/www-community/Threat_Modeling_Process
+4. https://owasp.org/www-project-threat-dragon/
+5. https://www.youtube.com/watch?v=RlKf3un7Uho
+6. https://www.youtube.com/watch?v=mL5G8HeI8zI
+7. https://www.youtube.com/watch?v=rEnJYNkUde0
+8. https://www.threatdragon.com/
+9. https://owasp.org/www-project-security-culture/v10/6-Threat_Modelling/
+10. https://github.com/OWASP/threat-dragon
+11. https://owasp.org/www-project-threat-model/
+12. https://github.com/OWASP/threat-modeling-playbook
+13. https://owaspsamm.org/model/design/threat-assessment/stream-b/
+14. https://owasp.org/www-project-threat-model-library/
+15. https://threatdragon.github.io/
+16. https://www.threatmodelingmanifesto.org/
+17. https://threatdragon.github.io/public/downloads/OWASP_introduction_threat_modeling.odp
+18. https://owasp.org/www-project-sap-threat-modeling-builder/
