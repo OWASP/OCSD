@@ -21,7 +21,7 @@
 - Secure Credential Recovery
 
 2.4 Password / token management
-- storage
+- storage (embedded or otherwise)
 - privacy implications
 - complexity
 - lifetime and rotation of password
