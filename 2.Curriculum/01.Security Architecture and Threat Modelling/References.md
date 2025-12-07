@@ -10,7 +10,7 @@ References:
 8. https://www.threatdragon.com/
 9. https://owasp.org/www-project-security-culture/v10/6-Threat_Modelling/
 10. https://github.com/OWASP/threat-dragon
-11. https://owasp.org/www-project-threat-model/
+11. https://owasp.org/www-project-threat-modeling/
 12. https://github.com/OWASP/threat-modeling-playbook
 13. https://owaspsamm.org/model/design/threat-assessment/stream-b/
 14. https://owasp.org/www-project-threat-model-library/
