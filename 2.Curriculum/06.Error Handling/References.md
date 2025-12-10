@@ -1,0 +1,19 @@
+References:
+1. https://owasp.org/www-community/Improper_Error_Handling
+2. https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html
+3. https://devguide.owasp.org/en/12-appendices/01-implementation-dos-donts/06-exception-error-handling/
+4. https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling
+5. https://cwe.mitre.org/data/definitions/728.html
+6. https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+7. https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/README
+8. https://cwe.mitre.org/data/definitions/209.html
+9. https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+10. https://owasp.org/Top10/A05_2021-Security_Misconfiguration/
+11. https://www.youtube.com/watch?v=5nHvu7hZoeA
+12. https://owasp.org/www-community/vulnerabilities/Missing_Error_Handling
+13. https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_for_Error_Code
+14. https://www.youtube.com/watch?v=WGafQnjSMk4
+15. https://www.youtube.com/watch?v=0WmtvSHOeUc
+16. https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/stable-en/02-checklist/05-checklist
+17. https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces
+18. https://mas.owasp.org/MASTG-KNOW-0065/
