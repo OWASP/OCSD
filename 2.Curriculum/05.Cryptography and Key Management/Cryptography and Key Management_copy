@@ -1,1 +1,79 @@
+## Module 5: Cryptography and Key Management
+
+### Common algorithm pitfalls
+
+* Always use Authenticated Encryption (AEAD)
+* Know what AEAD is
+* Know common examples of AEAD modes (GCM, CCM, OCB, Chacha20-Poly1305)
+* Prefer integrated AEAD modes over custom-built
+* When doing AEAD manually, use Encrypt-then-MAC
+* Prefer ChaCha20 on lightweight/embedded devices over AES
+* Nonce must be unique per key and plaintext combination
+* Never use a static nonce
+* An Initialization Vector (IV) needs to be unpredictable (=random)
+* Nonce and IV don't need to be secret
+* Do not use symmetric keys < 128 bit
+* Do not use Hash Algorithms older that SHA-2
+* Use HMAC when requiring a MAC, nothing custom-built
+* Use OEAP (=PKCS#1 v2.0) mode when doing RSA encryption
+* Use PSS (=PKCS#1 v2.1) model when doing RSA signatures
+* Do not reuse keys for multiple purposes
+* Use dedicated schemes for password hashing, not standard hash functions like SHA-2
+* Parameters for password-hashes need to be adapted regularly according to industry recommendations
+* Always use a salt when hashing passwords
+* Salt does not have to be secret
+* Salt has to be unique per user
+* Base64 is no encryption algorithm
+* Do not use cipher suites with CBC, RSA, (3)DES in TLS, harden against industry recommendations (e.g., Mozilla)
+   
+
+### Secure random number generation
+
+* Pseudo Random Number Generators (PRNG) produce deterministic output
+* A PRNG needs to be seeded with actual random numbers
+* A PRNG needs to be re-seeded periodically
+* True Random Number Generators (TRNG) use physical observations to produce random numbers
+* TRNGs are too slow for actual usage
+* Always use a Cryptographically Secure Pseudo Random Number Generator (CSPRNG) when doing security-relevant things
+* Operating Systems provide secure APIs for generating secure Random numbers. Those should be the preferred way of generating random numbers.
+* The OS takes care of seeding and re-seeding its CSPRNG automatically
+* Use /dev/urandom on Unix-based systems
+* Use BCryptGenRandom() on Windows
+* Most development Frameworks offer an API with a CSPRNG; they usually have "Secure" or "Crypto" in its name
+* The Framework takes care of seeding and re-seeding its CSPRNG automatically
+* Do not use RNG APIs without "Secure" or "Crypto" in its name
+* A well seeded CSRPNG can produce unlimited output
+
+### Key lifecycle and storage
+
+* Base64 encoded keys are not encrypted
+* Make sure to set file ACL appropriately when storing a secret key in a file
+* Prefer using OS-API for key management to doing this manually
+* Secret keys stored in a file should preferably be encrypted with a key derived from a user-supplied password
+* Secret keys from a hardware token can usually not be exported
+* Secret keys generated on a hardware token won't have a backup available
+* All keys should have a well-defined lifetime and be rotated at the end of the lifetime
+* Common lifetimes for certain key sizes can be found in industry recommendations
+* The more often a key is used, the shorter its lifetime should be
+* The shorter the size of a key, the shorter its lifetime should be
+* Access to a key needs to be restricted according to the principle of least privilege
+* When rotating a symmetric key, all data encrypted with the old key needs to be re-encrypted
+
+### Digital signatures and HMACs
+
+* MACs are symmetric algorithm
+* Digital signatures are asymmetric algorithms
+* When using a MAC, everyone who can verify a signature can also create one
+* When using a digital signature, people who can verify a signature cannot create one
+* A digital signature is created with a private key
+* A digital signature is verified with a public key
+* A MAC is created with a secret key
+* A MAC is verified with a secret key
+* MACs are faster the digital signatures
+* Always verify the signature before using the signed data
+* Elliptic curve based schemes have smaller key- and signature-sizes than RSA
+* Prefer Ed25519 (EdDSA) over ECDSA
+* (X.509) certificates combine a public key with metadata about the key's owner
+* (X.509) certificates are digitally signed by a trusted entity
+* X.509 certificates are digitally signed by Certification Authority (CA)
 
