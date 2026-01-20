@@ -19,3 +19,4 @@ References:
 17. https://threatdragon.github.io/public/downloads/OWASP_introduction_threat_modeling.odp
 18. https://owasp.org/www-project-sap-threat-modeling-builder/
 19. https://owasp.org/www-project-pytm/
+20. https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html
