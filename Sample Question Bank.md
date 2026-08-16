@@ -57,7 +57,7 @@
 * C. Storing them in a version-controlled .env file
 * D. Storing them in a dedicated secrets manager
 * E. Emailing them to developers
-* F. Putting them in cookies with HTTPOnly disabled
+* F. Putting them in cookies with HttpOnly disabled
 * ✅ Correct Answer: D
 
 ## Question 7: What is the purpose of Content Security Policy (CSP)?

@@ -15,7 +15,7 @@ Remember:
 
 The questions we may want to ask are:
 
-* If I am hiring a web application developer, what are the security related skills I would look for?
+* If I am hiring a web application developer, what are the security-related skills I would look for?
 * If I were a web application developer, what security skills would I like to be validated for?
 
 [CONTRIBUTING](./CONTRIBUTING.md) explains the structure of this repository.
@@ -26,7 +26,7 @@ Here are the curriculum modules that the working group for OCSD has arrived at:
 
 1. Secure Architecture and Threat Modeling
 2. Authentication and Credential Management
-3. Authorisation
+3. Authorization
 4. Input Validation and Output Encoding
 5. Cryptography and Key Management
 6. Error Handling

@@ -16,9 +16,11 @@ Each domain has a dedicated folder and contains the following files:
 * The “Supplementary Reading” file contains more reading material for the exam.
 * The “Parking Lot” file contains content that has not been included in the other files yet.
 
+In keeping with other OWASP projects, all repository-authored content, including prose, headings, and file and directory names, must use US English. Examples of preferred spellings include “authorization,” “behavior,” “modeling,” and “organization.” Preserve official titles, trademarks, quotations, URLs, code, and identifiers exactly as published.
+
 The topics are the high-level security constructs that a developer is expected to know.
-For example, a foundation-level developer needs to know about threat modelling, but they may not necessarily know how to threat model.
-Hence, adding content around threat modelling may not add to the body of knowledge.
-But adding sub-topics on what a developer needs to know about threat modelling will help.
+For example, a foundation-level developer needs to know about threat modeling, but they may not necessarily know how to threat model.
+Hence, adding content around threat modeling may not add to the body of knowledge.
+But adding sub-topics on what a developer needs to know about threat modeling will help.
 
 Please [open an issue](https://github.com/OWASP/OCSD/issues) if you have any questions.
