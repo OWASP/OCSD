@@ -1,9 +1,15 @@
 # OWASP Certified Secure Developer (OCSD)
 
 Welcome to the OCSD curriculum repository.
-The scope of this certification is Web Application Security.
-The OCSD is a foundation-level exam.
+OWASP Certified Secure Developer (OCSD) is a proposed foundation-level certification focused on web application security for developers.
+This repository contains the curriculum being developed by the OWASP OCSD working group, supporting references, and sample assessment questions.
 This is the official OWASP project link: <https://owasp.org/www-project-certified-secure-developer/>
+
+## Project Status
+This repository is a curriculum-development resource, not an exam registration service or a finalized certification handbook.
+
+## Audience and Scope
+OCSD is intended for web application developers who want to demonstrate foundational security knowledge and for hiring managers who need to assess that knowledge.
 
 This certification program is an answer to the questions a hiring manager for a developer might ask, to validate security knowledge of the candidate.
 It is also for the developers who want to showcase their skills in developing secure code.
@@ -22,9 +28,9 @@ The questions we may want to ask are:
 
 ## Curriculum Modules
 
-Here are the curriculum modules that the working group for OCSD has arrived at:
+Here are the [curriculum modules](/Curriculum) that the working group for OCSD has arrived at:
 
-1. Secure Architecture and Threat Modeling
+1. Secure Design, Architecture and Threat Modeling
 2. Authentication and Credential Management
 3. Authorization
 4. Input Validation and Output Encoding
@@ -43,7 +49,8 @@ Here are the curriculum modules that the working group for OCSD has arrived at:
 
 ## Body of Knowledge
 
-We try to include references to established OWASP projects first, but are open to other open-source materials too, if the license is suitable for our use case.
+The curriculum prioritizes established OWASP resources and projects, but the working group is open to include other open-source materials too, if the license is suitable for our use case.
+
 Here is an excerpt of OWASP projects that we are referencing:
 
 * <https://owasp.org/www-project-application-security-verification-standard/>
@@ -54,3 +61,10 @@ Here is an excerpt of OWASP projects that we are referencing:
 * <https://owasp.org/www-project-top-ten/>
 * <https://owasp.org/www-project-web-security-testing-guide/>
 * <https://owasp.org/www-project-code-review-guide/>
+
+
+## Contributing
+
+Contributions can improve the certification objectives, clarify the body of knowledge, add relevant references and teaching examples, or review sample questions.
+Please read the [contributing guidelines](./CONTRIBUTING.md) before submitting any changes (PRs), and keep module revisions separate from repository-wide changes.
+For proposals that affect the whole curriculum, please open a [GitHub issue](https://github.com/OWASP/OCSD/issues) first.
