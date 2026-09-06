@@ -7,9 +7,10 @@ These guidelines define how curriculum changes should be written and reviewed.
 
 ## Audience and scope
 
-OCSD is a foundation-level certification in web application security for developers.
-The curriculum focuses on the security knowledge and skills expected from any web application developer.
-Specialized and advanced material belongs in future certifications unless candidates need it to explain or apply a foundational topic.
+OCSD is a foundation-level, knowledge-based certification in web application security for developers.
+It has no coding exercises or other practical tasks.
+The curriculum focuses on the security knowledge expected from any web application developer.
+Specialized and advanced material belongs in future certifications unless it provides context needed to explain a foundational topic.
 
 Explain unfamiliar security concepts in language that is clear to an audience with no formal security background.
 
@@ -21,7 +22,7 @@ For example, prefer `client-side check` to `browser check` when the statement al
 
 Each module has a dedicated directory containing files with distinct purposes:
 
-- `NN.00 - Objectives.md` defines measurable outcomes and the expected competency.
+- `NN.00 - Objectives.md` defines measurable knowledge outcomes and the expected competency.
 - `NN.01 - Module Name.md` defines the assessable body of knowledge.
 - `NN.02 - References.md` lists official OWASP material relevant to the module.
 - `NN.03 - Supplementary Reading Material.md` explains the curriculum, shows how developers apply it, and provides external learning resources.
@@ -32,10 +33,14 @@ It is not part of the finished module.
 ### Objectives
 
 The objectives file starts with a short description of the module's purpose.
-It then lists concise learning outcomes that state what a successful candidate can do.
-A competency section combines those outcomes into a realistic development task.
+It then lists concise learning outcomes that state the knowledge a successful candidate is expected to demonstrate.
+An expected competency section summarizes that knowledge in a realistic development context.
 
-Learning outcomes should describe realistic tasks for a foundation-level developer.
+Learning outcomes must reflect the knowledge assessed by the examination.
+Suitable verbs include `identify`, `recognize`, and `distinguish`.
+Verbs such as `explain` and `describe` imply a constructed response.
+Verbs such as `apply`, `use`, `create`, `implement`, `configure`, and `execute` imply practical performance.
+These verbs should not describe assessment outcomes.
 
 ### Body of knowledge
 
@@ -43,7 +48,7 @@ The file named after the module defines its assessable scope.
 It expands the learning outcomes into the concepts, relationships, principles, and practices covered by the certification.
 
 Organize related content into a small number of meaningful topic areas.
-Each scope statement should tell candidates, curriculum authors, and assessment writers what a candidate must explain, distinguish, apply, or evaluate.
+Each scope statement should tell candidates, curriculum authors, and assessment writers what a candidate must identify, recognize, or distinguish.
 Include relationships and relevant context so that the expected depth is clear.
 
 Only include the detail needed to define the scope.
@@ -62,6 +67,7 @@ Provide enough relevant references for developers to explore the topics of this 
 Supplementary reading teaches the concepts named in the body of knowledge.
 Write for developers who may encounter the topic for the first time.
 Define important terms, explain why they matter, and connect security decisions to development work.
+Practical language is appropriate in supplementary reading because it describes development work rather than an exam activity.
 
 Refer to non-OWASP material when OWASP material does not cover an assessable topic in enough depth or when another format helps developers learn.
 All links to non-OWASP material belong in the supplementary reading file.
