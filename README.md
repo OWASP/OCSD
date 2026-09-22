@@ -68,3 +68,7 @@ Here is an excerpt of OWASP projects that we are referencing:
 Contributions can improve the certification objectives, clarify the body of knowledge, add relevant references and teaching examples, or review sample questions.
 Please read the [contributing guidelines](./CONTRIBUTING.md) before submitting any changes (PRs), and keep module revisions separate from repository-wide changes.
 For proposals that affect the whole curriculum, please open a [GitHub issue](https://github.com/OWASP/OCSD/issues) first.
+
+## License
+
+This repository is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](./LICENSE).
